@@ -4,5 +4,4 @@ if not syn then
   while wait() do
   rconsoleprint("you just got a virus lol have fun!")
     end
-  
-  
+  end

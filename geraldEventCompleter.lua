@@ -8,7 +8,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.Map.ItemS
     end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Map.Interactives.WellWater.CFrame
 wait(1)
-game:GetService("Players").LocalPlayer.Character.Bucket.Click:FireServer(workspace.Map.Interactives.WellWater)
+game.Players.LocalPlayer.Character.Bucket.Click:FireServer(workspace.Map.Interactives.WellWater)
 wait()
 game.Players.LocalPlayer.Character.Bucket.Click:FireServer(workspace.Map.Interactives.Fire)
 wait()

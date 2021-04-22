@@ -13,3 +13,5 @@ wait()
 game.Players.LocalPlayer.Character.Bucket.Click:FireServer(workspace.Map.Interactives.Fire)
 wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Map.Interactives.Exit.CFrame
+wait()
+game.ReplicatedStorage.ServerNetwork:InvokeServer("EventCheck")

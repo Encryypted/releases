@@ -15,3 +15,4 @@ wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Map.Interactives.Exit.CFrame
 wait()
 game.ReplicatedStorage.ServerNetwork:InvokeServer("EventCheck")
+--if you see this, tbh i couldve made this one line, but oh well, it's wtv

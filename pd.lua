@@ -1,5 +1,5 @@
 if 1 == 1 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/hazelvert/releases/master/pdBackup.lua"))()
 	return
 end
 

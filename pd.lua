@@ -16,8 +16,6 @@ end
 repeat
 	task.wait()
 until game:IsLoaded()
-game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
-
 if isfile and writefile and typeof(isfile) == 'function' and typeof(writefile) == 'function' then
 	if not isfile('PromptedDiscordLinoriaCFRR.txt') then
 		writefile('PromptedDiscordLinoriaCFRR.txt', game:GetService('HttpService'):JSONEncode('hi'))
@@ -788,6 +786,9 @@ local function walkToBooth()
 	Players:Chat(Options.DanceChoiceD.Value)
 end
 walkToBooth()
+if not game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult then
+	repeat task.wait() until game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult
+end
 game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 if Toggles.AutoBegT.Value == true then
 	spamming = task.spawn(begging)

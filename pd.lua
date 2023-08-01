@@ -17,6 +17,7 @@ end
 repeat
 	task.wait()
 until game:IsLoaded()
+game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 
 if isfile and writefile and typeof(isfile) == 'function' and typeof(writefile) == 'function' then
 	if not isfile('PromptedDiscordLinoriaCFRR.txt') then
@@ -921,4 +922,3 @@ while task.wait(Options.AutoSHMinutes.Value * 60) do
 		hopSet()
 	end
 end
-game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)

@@ -16,16 +16,6 @@ end
 repeat
 	task.wait()
 until game:IsLoaded()
-if isfile and writefile and typeof(isfile) == 'function' and typeof(writefile) == 'function' then
-	if not isfile('PromptedDiscordLinoriaCFRR.txt') then
-		writefile('PromptedDiscordLinoriaCFRR.txt', game:GetService('HttpService'):JSONEncode('hi'))
-		local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-		Module.Prompt({
-			invite = "https://discord.gg/fNeggqVMZs",
-			name = "CF-Community",
-		})
-	end
-end
 
   --Stops script if on a different game
 if game.PlaceId ~= 8737602449 and game.PlaceId ~= 8943844393 then
@@ -300,9 +290,7 @@ end
 
 -- [[ ACTUAL CODE ]]
 
-local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 local httpservice = game:GetService('HttpService')
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm'))()")
 local repoLib = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
 local Library = loadstring(game:HttpGet(repoLib .. 'Library.lua'))()

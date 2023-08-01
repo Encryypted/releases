@@ -786,10 +786,9 @@ local function walkToBooth()
 	Players:Chat(Options.DanceChoiceD.Value)
 end
 walkToBooth()
-if not game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult then
-	repeat task.wait() until game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult
+for i=1, 5 do task.wait(1)
+	game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 end
-game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 if Toggles.AutoBegT.Value == true then
 	spamming = task.spawn(begging)
 end

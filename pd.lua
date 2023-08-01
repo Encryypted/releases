@@ -1,3 +1,4 @@
+getgenv().settings.hexBox = "#ed64ed"
 if 1 == 1 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
 	return
@@ -46,7 +47,6 @@ local httprequest = (syn and syn.request) or http and http.request or http_reque
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/hook/hookwscripts.lua"))()
 task.wait()
   --Anti-AFK
-game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 local Players = game:GetService("Players")
 Players.LocalPlayer:Kick('unsupported executor')
 local connections = getconnections or get_signal_cons or nil
@@ -302,9 +302,7 @@ end
 
 -- [[ ACTUAL CODE ]]
 
-local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 local httpservice = game:GetService('HttpService')
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/hazelvert/releases/master/pd.lua'))()")
 local repoLib = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
 local Library = loadstring(game:HttpGet(repoLib .. 'Library.lua'))()
@@ -923,3 +921,4 @@ while task.wait(Options.AutoSHMinutes.Value * 60) do
 		hopSet()
 	end
 end
+game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)

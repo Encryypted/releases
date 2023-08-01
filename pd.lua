@@ -1,4 +1,3 @@
-getgenv().settings.hexBox = "#ed64ed"
 if 1 == 1 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
 	return

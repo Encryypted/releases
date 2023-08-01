@@ -46,6 +46,7 @@ local httprequest = (syn and syn.request) or http and http.request or http_reque
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/hook/hookwscripts.lua"))()
 task.wait()
   --Anti-AFK
+game.Players.LocalPlayer.PlayerGui.PromptWearLastOutfit.PromptResult:FireServer(true)
 local Players = game:GetService("Players")
 Players.LocalPlayer:Kick('unsupported executor')
 local connections = getconnections or get_signal_cons or nil

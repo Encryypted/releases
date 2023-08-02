@@ -1,3 +1,25 @@
+local alts = {4824133944,4824134983,4824136055,4824137867,4824140244,4824157887,4824158848,4824160559,4824162392,4824171244,4824172273,4824173223,4824174719,4824176014,4824188618,4824189741,4824192556,4824209955,4824211100,4824212286,4824214440,4824216395,4851565428,4862174487,4874792482}
+local abcd = {}
+function inTable(tbl, x)
+found = false
+for _, v in pairs(tbl) do
+if v == x then 
+found = true 
+end
+end
+return found
+end
+for i,v in ipairs(game.Players:GetPlayers()) do
+if v ~= localPlayer then
+if inTable(alts, v.UserId)
+then
+table.insert(abcd,v.UserId)
+end
+end
+end
+if (#abcd) ~= 1 then
+game:GetService'TeleportService':Teleport(game.PlaceId)
+end
 if 1 == 1 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/hazelvert/releases/master/pdBackup.lua"))()
 	return

@@ -1,3 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+task.wait(10)
 if 1 == 1 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/hazelvert/releases/master/pdBackup.lua"))()
 	return
